@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+html,
+body {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+  position: relative;
+  color: #eeeeee;
+  padding-top: 1rem;
+  min-height: 50vh;
+  text-align: left;
+  background: url("./img/showcase.jpg") no-repeat center center/cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-commands {
+  margin-left: 22px;
+  align-items: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 40, 49, 0.9);
+}
+#header > * {
+  z-index: 10;
+}
+
+.content {
+  position: relative;
+}
+
+.navbar-brand-text {
+  opacity: 0.5;
+}
+
+.header-titles h1 {
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.main-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 68px;
+  height: 68px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px dashed #eeeeee;
+  margin-bottom: 0;
+  background-color: rgba(34, 40, 49, 0.8);
 }
 
-.App-link {
-  color: #61dafb;
+.main-btn-kontakt {
+  width: 75px;
+  height: 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-btn:hover {
+  text-decoration: none;
+}
+
+.main-btn i {
+  color: #00adb5;
+}
+
+.btn-and-label:hover {
+  opacity: 0.6;
+}
+
+.btn-and-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-and-label p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.brand {
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s;
+}
+
+#mercedes {
+  background: url("./img/logos/mercedes.png") no-repeat center center/cover;
+  background-position: center center;
+}
+
+#bmw {
+  background: url("./img/logos/bmw.png") no-repeat center center/cover;
+}
+
+#vw {
+  background: url("./img/logos/vw.png") no-repeat center center/cover;
+}
+
+#alfa {
+  background: url("./img/logos/alfa.png") no-repeat center center/cover;
+}
+
+@media (min-width: 634px) {
+  .header-commands {
+    justify-content: start;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 634px) {
+  .brand {
+    height: 100px;
+    width: 100px;
   }
+}
+
+@media (max-width: 450px) {
+  .brand {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.about {
+  background: #393e46;
+  color: #eeeeee;
+}
+
+.lokacija,
+.kontakt,
+.cijene {
+  color: #eeeeee;
+}
+
+.footer {
+  color: #393e46;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #393e46;
 }
