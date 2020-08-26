@@ -14,7 +14,12 @@ function Map() {
       defaultCenter={{ lat: 45.36609, lng: 14.33795 }}
       defaultOptions={{ styles: mapStyles }}
     >
-      {<Marker position={{ lat: 45.36609, lng: 14.33795 }} />}
+      {
+        <Marker
+          position={{ lat: 45.36609, lng: 14.33795 }}
+          animation={window.google.maps.Animation.DROP}
+        />
+      }
     </GoogleMap>
   );
 }

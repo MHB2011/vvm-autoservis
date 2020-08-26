@@ -1,5 +1,5 @@
 import React from "react";
-import MyMap from "../Map";
+import MyMap from "../Maps/Map";
 
 const Lokacija = ({ GoogleApiKey }) => {
   return (
