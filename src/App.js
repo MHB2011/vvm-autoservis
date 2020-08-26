@@ -12,6 +12,14 @@ import Contact from "./components/pages/Contact";
 import NotFound from "./components/pages/NotFound";
 
 function App() {
+  let googleAPI;
+
+  if (process.env.NODE_ENV !== "production") {
+    googleAPI = process.env.REACT_APP_GOOGLE_API;
+  } else {
+    googleAPI = process.env.GOOGLE_API;
+  }
+
   return (
     <Router>
       <div className="App">
@@ -19,9 +27,13 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/lokacija" component={Lokacija} />
+          <Route
+            exact
+            path="/lokacija"
+            component={() => <Lokacija GoogleApiKey={googleAPI} />}
+          />
           <Route exact path="/kontakt" component={Contact} />
-          <Route exact path="/cijene" component={Cijene} />
+          <Route exact path="/o-nama" component={Home} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

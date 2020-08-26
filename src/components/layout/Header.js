@@ -24,10 +24,10 @@ const Header = () => {
             <p className="group-label">Kontakt</p>
           </div>
           <div className="btn-and-label">
-            <Link to="/cijene" className="main-btn">
-              <i className="fas fa-dollar-sign fa-2x"></i>
+            <Link to="/o-nama" className="main-btn">
+              <i className="fas fa-info fa-2x"></i>
             </Link>
-            <p className="group-label">Cijene</p>
+            <p className="group-label">O Nama</p>
           </div>
         </div>
       </div>

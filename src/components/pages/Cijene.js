@@ -5,7 +5,7 @@ const Cijene = () => {
     <div className="cijene">
       <div className="row m-0">
         <div className="col ml-4">
-          <h1>cijene</h1>
+          <h1 className="text-animated">Cijene</h1>
         </div>
       </div>
     </div>
