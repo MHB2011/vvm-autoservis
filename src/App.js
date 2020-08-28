@@ -20,9 +20,6 @@ function App() {
     googleAPI = process.env.REACT_APP_GA;
   }
 
-  console.log("Google api:");
-  console.log(googleAPI);
-
   return (
     <Router>
       <div className="App">
