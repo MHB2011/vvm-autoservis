@@ -1,0 +1,4 @@
+[build]
+    publish = "build"
+[context.production]
+    environment = { REACT_APP_GA = "AIzaSyAycdo6YQfCwlvlRWZ82JkK_TYFdP_AovI"}

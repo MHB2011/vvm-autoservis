@@ -17,7 +17,7 @@ function App() {
     console.log("nije production");
   } else {
     console.log("je production");
-    googleAPI = process.env.GOOGLE_API;
+    googleAPI = process.env.REACT_APP_GA;
   }
 
   console.log("Google api:");
