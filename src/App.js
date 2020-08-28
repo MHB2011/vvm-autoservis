@@ -14,9 +14,7 @@ function App() {
 
   if (process.env.NODE_ENV !== "production") {
     googleAPI = process.env.REACT_APP_GOOGLE_API;
-    console.log("nije production");
   } else {
-    console.log("je production");
     googleAPI = process.env.REACT_APP_GA;
   }
 
