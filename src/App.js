@@ -5,9 +5,7 @@ import Navbar from "./components/layout/Navbar";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Home from "./components/pages/Home";
-import About from "./components/pages/About";
 import Lokacija from "./components/pages/Lokacija";
-import Cijene from "./components/pages/Cijene";
 import Contact from "./components/pages/Contact";
 import NotFound from "./components/pages/NotFound";
 
